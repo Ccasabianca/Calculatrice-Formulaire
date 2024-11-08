@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.buttons {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 70px;
+}
+
+#show-calculator {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: green;
+    color: #FFF; 
+    border-style: none;
+    border-radius: 3px;
+}
+#hide-calculator {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: red;
+    color: #FFF;
+    border-style: none;
+    border-radius: 3px;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    margin-bottom: 5px;
+    padding: 8px;
+    width: 90%;
+    font-size: 16px;
+}
+
+select {
+    margin-bottom: 5px;
+    padding: 8px;
+    width: fit-content;
+    font-size: 16px;
+    border-radius: 5px;
+}
+button[type="submit"] {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    
+}
+
+.tooltip {
+    display: none;
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+input:hover + .tooltip,
+select:hover + .tooltip {
+    display: block;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.error {
+    color: red !important;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #fdd;
+    border-radius: 5px;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 250px; 
+    height: 100vh; 
+    background-color: #333;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav li {
+    margin: 15px 0;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar-nav a:hover {
+    background-color: #575757;
+}

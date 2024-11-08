@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <ul class="sidebar-nav">
+            <li><a href="/Calculatrice-Formulaire/Calculatrice/calculatrice.html">Calculatrice</a></li>
+            <li><a href="/Calculatrice-Formulaire/Formulaire/formulaire.html">Formulaire</a></li>
+        </ul>
+    </div>
+    
+    <div class="buttons">
+        <button id="show-calculator">Afficher la calculatrice</button>
+        <button id="hide-calculator">Cacher la calculatrice</button>
+    </div>
+
+    <div id="calculator" class="calculator hidden">
+        <form id="calc-form">
+            <label>
+                <input type="text" id="value1" placeholder="Première valeur">
+                <div class="tooltip">Veuillez saisir un chiffre</div>
+            </label>
+
+            <label>
+                <input type="text" id="value2" placeholder="Deuxième valeur">
+                <div class="tooltip">Veuillez saisir un chiffre</div>
+            </label>
+
+            <label>
+                <select id="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="%">%</option>
+                    <option value="**">**</option>
+                </select>
+                <div class="tooltip">Veuillez sélectionner un opérateur</div>
+            </label>
+
+            <button type="submit">Calculer</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
